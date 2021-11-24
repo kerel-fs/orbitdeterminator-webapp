@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+import argparse
+
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -749,4 +751,11 @@ def display_file(file_content, file_name, dropdown_value,dropdown_value_2,dropdo
         return html.Div(children=[html.Div('''There was an error processing this file.Try uploading another file in required format.''')])
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("HOST", default=None)
+    parser.add_argument("PORT", default=8050)
+    args = parser.parse_args()
+
+    app.run_server(debug=True,
+                   host=args.HOST,
+                   port=args.PORT)
