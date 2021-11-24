@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+  web:
+    build:
+      context: '.'
+    image: 'orbitdeterminator-webapp'
+    ports:
+      - '8000:8000'
+    volumes:
+      - '.:/usr/local/src/orbitdeterminator-webapp:z'
+    command: ["python", "app.py", "0.0.0.0", "8000"]

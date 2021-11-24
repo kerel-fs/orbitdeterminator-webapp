@@ -25,6 +25,15 @@ Install other requirements
 pip install -r requirements.txt
 ```
 
+### Installation (using docker-compose)
+
+Make sure you have docker and docker-compose installed. Then build and start the container with:
+```
+docker-compose up --build -d
+```
+
+Now you can access the webpage at `http://DOCKER_IP:8000`. The logs files are available with `docker-compose logs`.
+
 ### Usage
 Run the app with `python app.py`. Go to [http://localhost:8050](http://localhost:8050) to view the app.
 
