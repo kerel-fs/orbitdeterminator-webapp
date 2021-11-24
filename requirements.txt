@@ -1,3 +1,4 @@
+git+https://github.com/aerospaceresearch/orbitdeterminator@e51bf6
 certifi==2018.4.16
 chardet==3.0.4
 click==6.7
@@ -19,7 +20,6 @@ jupyter-core==4.4.0
 kiwisolver==1.0.1
 MarkupSafe==1.0
 matplotlib==2.2.2
-orbitdeterminator==1.0
 nbformat==4.4.0
 numpy==1.14.3
 plotly==3.10.0
